@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="d-flex container justify-content-center align-items-center w-50" style="height: 100vh;">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th colspan="4"><input type="text" class="w-100 " id="result"></th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th> <button onclick="get_num('Math.sqrt()')" class="btn btn-dark w-100 text-center">&#8730;</button> </th>
+              <th> <button onclick="get_num('Math.cbrt()')" class="btn btn-dark w-100 text-center">&#8731;</button> </th>
+              <th>  <button onclick="get_num('%')" class="btn btn-dark w-100 text-center">%</button> </th>
+              <th>  <button onclick="clear_result()" class="btn btn-danger w-100 text-center">AC</button> </th>
+            </tr>
+    
+                <tr>
+                    <th> <button onclick="get_num('Math.sin')" class="btn btn-dark w-100 text-center">Sin</button> </th>
+                    <th> <button onclick="get_num('Math.cos')" class="btn btn-dark w-100 text-center">Cos</button> </th>
+                    <th> <button  onclick="get_num('Math.tan')" class="btn btn-dark w-100 text-center">Tan</button> </th>
+                    <th> <button  onclick="get_num('Math.random')" class="btn btn-dark w-100 text-center">Rand</button> </th>
+                </tr>
+                <tr>
+                    <th> <button onclick="get_num('&#40')" class="btn btn-dark w-100 text-center">&#40</button> </th>
+                    <th> <button onclick="get_num('&#41')" class="btn btn-dark w-100 text-center">&#41</button> </th>
+                    <th> <button  onclick="get_num('Math.E')" class="btn btn-dark w-100 text-center">E</button> </th>
+                    <th> <button  onclick="get_num('Math.PI')" class="btn btn-dark w-100 text-center">&Pi;</button> </th>
+                </tr>
+                <tr>
+                    <th> <button onclick="get_num('7')" class="btn btn-dark w-100 text-center">7</button> </th>
+                    <th> <button onclick="get_num('8')" class="btn btn-dark w-100 text-center">8</button> </th>
+                    <th> <button  onclick="get_num('9')" class="btn btn-dark w-100 text-center">9</button> </th>
+                    <th> <button  onclick="get_num('/')" class="btn btn-dark w-100 text-center">/</button> </th>
+                </tr>
+                <tr>
+                    <th> <button onclick="get_num('4')" class="btn btn-dark w-100 text-center">4</button> </th>
+                    <th> <button  onclick="get_num('5')" class="btn btn-dark w-100 text-center">5</button> </th>
+                    <th> <button  onclick="get_num('6')" class="btn btn-dark w-100 text-center">6</button> </th>
+                    <th> <button  onclick="get_num('*')" class="btn btn-dark w-100 text-center">x</button> </th>
+                </tr>
+                <tr>
+                    <th> <button onclick="get_num('1')"  class="btn btn-dark w-100 text-center">1</button> </th>
+                    <th> <button  onclick="get_num('2')"  class="btn btn-dark w-100 text-center">2</button> </th>
+                    <th> <button onclick="get_num('3')"  class="btn btn-dark w-100 text-center">3</button> </th>
+                    <th> <button onclick="get_num('-')" class="btn btn-dark w-100 text-center">-</button> </th>
+                </tr>
+                <tr>
+                    <th> <button  onclick="clear_result()" class="btn btn-danger w-100 text-center">C</button> </th>
+                    <th> <button onclick="get_num('0')"  class="btn btn-dark w-100 text-center">0</button> </th>
+                    <th> <button  onclick="getResult()" class="btn btn-success w-100 text-center">=</button> </th>
+                    <th rowspan="2"> <button onclick="get_num('+')"   class="btn btn-dark w-100 h-5 text-center">+</button> </th>
+
+
+                </tr>
+                
+                   
+            </tbody>
+        </table>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+</body>
+
+</html>
